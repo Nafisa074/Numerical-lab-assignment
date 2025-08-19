@@ -1,0 +1,64 @@
+1 num:
+n = int(input("Enter a number: "))
+total = 0
+
+for i in range(1, n+1):
+    total += i
+
+print("Sum of first", n, "natural numbers is:", total)
+
+2 num:
+for i in range(1, 21):
+    if i % 2 == 0:
+        print(i, end=" ")
+for i in range(2, 21, 2):
+    print(i, end=" ")
+3 num:
+for i in range(10, 0, -1):
+    print(i, end=" ")
+4 num:
+
+n = int(input("Enter a number: "))
+
+if n <= 1:
+    print("Not Prime")
+else:
+    is_prime = True
+    for i in range(2, n):
+        if n % i == 0:
+            is_prime = False
+            break
+    if is_prime:
+        print("Prime")
+    else:
+        print("Not Prime")
+num5:
+
+
+a = float(input("Enter first number: "))
+op = input("Enter operator (+, -, *, /): ")
+b = float(input("Enter second number: "))
+
+if op == '+':
+    result = a + b
+elif op == '-':
+    result = a - b
+elif op == '*':
+    result = a * b
+elif op == '/':
+    if b == 0:
+        print("Error: Division by zero")
+        exit()
+    result = a / b
+else:
+    print("Invalid operator")
+    exit()
+
+print("Result:", result)
+
+
+
+
+
+
+
